@@ -1,0 +1,22 @@
+[package]
+name = "vrac-window"
+version = "0.1.0"
+# authors = [ "Vraccer" ]
+edition = "2021"
+license = "MIT"
+description = "The windowing system of Vrac"
+documentation = "https://docs.rs/vrac-window"
+repository = "https://github.com/VRACware/vrac-window"
+readme = "README.md"
+keywords = ["vulkan", "windowing"]
+categories = ["rendering::engine"]
+
+[dependencies]
+vulkano = { workspace = true }
+vulkano-util = { workspace = true }
+winit = { workspace = true }
+
+[[test]]
+name = "tests"
+path = "tests/main.rs"
+harness = false
