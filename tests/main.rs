@@ -9,6 +9,7 @@ fn main() {
 
     println!("Adding 4 different windows");
     let mut w = Windows::init();
+    // let _w_simple = w.add_window(&c, WindowDescriptor::default());
     let _w_primary = w.add_window( &c,
         WindowDescriptor {
             title: "Primary window - borderless fullscreen".to_owned(),
